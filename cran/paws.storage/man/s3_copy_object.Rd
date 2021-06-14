@@ -205,8 +205,7 @@ destination bucket is owned by a different account, the request will
 fail with an HTTP \verb{403 (Access Denied)} error.}
 
 \item{ExpectedSourceBucketOwner}{The account id of the expected source bucket owner. If the source bucket
-is owned by a different account, the request will fail with an HTTP
-\verb{403 (Access Denied)} error.}
+is owned by a different account, the request will fail with an HTTP \verb{403 (Access Denied)} error.}
 }
 \value{
 A list with the following syntax:\preformatted{list(
@@ -274,7 +273,7 @@ When copying an object, you can preserve all metadata (default) or
 specify new metadata. However, the ACL is not preserved and is set to
 private for the user making the request. To override the default ACL
 setting, specify a new ACL when generating a copy request. For more
-information, see \href{https://docs.aws.amazon.com/AmazonS3/latest/userguide/acl_overview.html}{Using ACLs}.
+information, see \href{https://docs.aws.amazon.com/AmazonS3/latest/userguide/acl-overview.html}{Using ACLs}.
 
 To specify whether you want the object metadata copied from the source
 object or replaced with metadata provided in the request, you can
