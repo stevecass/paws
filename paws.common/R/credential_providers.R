@@ -260,11 +260,8 @@ get_container_credentials <- function() {
   metadata_request <-
     new_http_request("GET", metadata_url, timeout = 1)
 
-  metadata_response <- tryCatch({
-    issue(metadata_request)
-  }, error = function (e){
-    NULL
-  })
+  metadata_response <- issue(metadata_request) 
+
 
   if (is.null(metadata_response) || metadata_response$status_code != 200) {
     return(NULL)
